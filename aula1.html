@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></hed>
+
+<body>
+
+<script>
+
+nota1 = prompt ("Digite Nota da Prova:");
+nota1 = eval (nota1);
+nota2 = prompt ("Digite Nota do Projeto:");
+nota2 = eval (nota2);
+nota3 = prompt ("Digita Nota da Lista de Exercícios:");
+nota3 = eval (nota3);
+nota4 = prompt ("Digite Nota do Projeto de Softwere livre e conclusao de MOOC:");
+nota4 = eval (nota4);
+media = ((nota1*3) + (nota2*3) + (nota3*2) + (nota4*3))/(3+3+2+3);
+media = parseFloat (media.toFixed(2));
+
+if (media>=8)
+{
+document.write	("Aluno Aprovado!" +"Média: " +media +" - PARABÉNS")
+}
+else {
+document.write ("Aluno Reprovado!" +"Média: " +media)
+document.write ("<br>")
+document.write ("Para ser aprovado na final você precisa tirar " +(10-media))
+}
+
+
+
+</script>
+</body>
+</html>
